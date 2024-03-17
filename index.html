@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Roadmap by winny</title>
+</head>
+<body>
+    <div class="tbl">
+    <h1><b>Roadmap to Become AI developers</b></h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="sk">Skills Needed</th>
+                <th class="wn">What do you need</th>
+                <th class="hg">How to get or and How to do</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <b>Mathematics</b>
+                    <ul class="math">
+                        <li class="cmp">Linear Algebra</li>
+                        <li class="cmp">Calculus</li>
+                        <li class="cmp">Probabilities and Statistics</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="req1">
+                        <li class="cmp">Mathematic Text Book</li>
+                        <li class="cmp">Internet</li>
+                        <li class="cmp">Help of some Teachers in the domain</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Math textbook can be bought from any Science library ,use internet as a complementary or an altenative</li>
+                        <li>Teachers in your school will be fine. If you are not going to school try to get in contact with them they can give you advise in many aspect including the types of book you can by base on your level</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Machine Learning</b>
+                    <ul class="ml">
+                        <li class="cmp">Python</li>
+                        <li class="og">Data Preprocessing</li>
+                        <li class="ns">Deep Learning</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="req2">
+                        <li class="cmp">A Computer</li>
+                        <ul>Install the following softwares and packages
+                            <li class="cmp">Python or other</li>
+                            <li class="cmp">A code editor</li>
+                            <li class="cmp">numpy, pandas, matplotlib</li>
+                            <li class="og">pytorch</li>
+                        </ul>
+                        <li class="cmp">Practice Regularly</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Here you can get <a href="https://www.python.org">Python</a>, <a href="https://code.visualstudio.com">Code Editor</a>. To download libraries, open command line and type <b>pip install library_name</b> or <b>conda install library_name</b>. You can specify your version <a href="https://pypi.org">Check Documentation for more information</a></li>
+                        <li>Try to be familiar with whatever language you choose</li>
+                        <li>Try to get other machine learning project from github and or other source to study them and try to like use reverse  engineering on them to undastand each line of code </li>
+                        <ul>Project you can follow
+                            <li><b>Coming Soons</b></li>
+                            <li>...</li>
+                        </ul>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>buid your own AI Project</b>
+                    <ul class="f1">
+                        <li class="ns">NLP</li>
+                        <li class="ns">Image Recognition</li>
+                        <li class="ns">healthcare</li>
+                        <li class="ns">Recommendation System</li>
+                        <li class="ns">GANss</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="f2">
+                        <li class="ns">Do this projects or other to test your skill</li>
+                        <li class="cmp">Meet other people that share your intress to gain more</li>
+                        <li class="ns">Share your work with the world to help other peoples and get feedback</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li class="big"><b>Well done you are an accomplished AI Developer</b></li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="message"></div>
+                </td>
+            </tr>
+        </tbody>
+    </div>
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const listItems = document.querySelectorAll('.math li');
+            listItems.forEach(item => {
+                item.addEventListener('mouseover', function() {
+                    const className = this.getAttribute('class');
+                    showMessage(className);
+                });
+                item.addEventListener('mouseout', function() {
+                    hideMessage();
+                });
+            });
+        
+            function showMessage(className) {
+                const message = document.querySelector('.message');
+                switch(className) {
+                    case 'cmp':
+                        message.textContent = 'Consept understoth since college and still getting more inside';
+                        break;
+                }
+                message.style.display = 'block';
+            }
+        
+            function hideMessage() {
+                const message = document.querySelector('.message');
+                message.style.display = 'none';
+            }
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const listItems = document.querySelectorAll('.req1 li');
+    listItems.forEach(item => {
+        item.addEventListener('mouseover', function() {
+            const className = this.getAttribute('class');
+            showMessage(className);
+        });
+        item.addEventListener('mouseout', function() {
+            hideMessage();
+        });
+    });
+        
+    function showMessage(className) {
+        const message = document.querySelector('.message');
+        switch(className) {
+            case 'cmp':
+                message.textContent = 'Aquired';
+                break;
+            case 'og':
+                message.textContent = 'I will try to get it';
+                break;
+            case 'ns':
+                message.textContent = 'I cannot access it right now';
+                break;
+        }
+        message.style.display = 'block';
+    }
+        
+    function hideMessage() {
+        const message = document.querySelector('.message');
+        message.style.display = 'none';
+    }
+});
+        
+        document.addEventListener("DOMContentLoaded", function() {
+    const listItems = document.querySelectorAll('.ml li');
+    listItems.forEach(item => {
+        item.addEventListener('mouseover', function() {
+            const className = this.getAttribute('class');
+            showMessage(className);
+        });
+        item.addEventListener('mouseout', function() {
+            hideMessage();
+        });
+    });
+        
+    function showMessage(className) {
+        const message = document.querySelector('.message');
+        switch(className) {
+            case 'cmp':
+                message.textContent = 'I can now work easily with python';
+                break;
+            case 'og':
+                message.textContent = 'Currently learning data preprocessing';
+                break;
+            case 'ns':
+                message.textContent = 'just begining';
+                break;
+        }
+        message.style.display = 'block';
+    }
+        
+    function hideMessage() {
+        const message = document.querySelector('.message');
+        message.style.display = 'none';
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const listItems = document.querySelectorAll('.req2 li');
+    listItems.forEach(item => {
+        item.addEventListener('mouseover', function() {
+            const className = this.getAttribute('class');
+            showMessage(className);
+        });
+        item.addEventListener('mouseout', function() {
+            hideMessage();
+        });
+    });
+        
+    function showMessage(className) {
+        const message = document.querySelector('.message');
+        switch(className) {
+            case 'cmp':
+                message.textContent = 'Aquired';
+                break;
+            case 'og':
+                message.textContent = 'having some problems may be due to compatibility';
+                break;
+            case 'c':
+                message.textContent = 'not yet downloaded';
+                break;
+        }
+        message.style.display = 'block';
+    }
+        
+    function hideMessage() {
+        const message = document.querySelector('.message');
+        message.style.display = 'none';
+    }
+});
+
+        </script>
+</body>
+</html>
